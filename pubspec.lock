@@ -428,8 +428,8 @@ packages:
     dependency: "direct main"
     description:
       path: "."
-      ref: bd7a827
-      resolved-ref: bd7a827cd4fa2bc081e2e638cd0eafc983c0f2af
+      ref: cf46353
+      resolved-ref: cf463536b50121f446ce90582cd949bd62ceb3d0
       url: "https://github.com/CreatorStack/sentry.git"
     source: git
     version: "6.18.3"

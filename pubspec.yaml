@@ -18,7 +18,7 @@ dependencies:
   sentry:
     git: 
       url: https://github.com/CreatorStack/sentry.git
-      ref: "bd7a827"
+      ref: "cf46353"
   package_info_plus: '>=1.0.0 <4.0.0'
   meta: ^1.3.0
 dev_dependencies:
