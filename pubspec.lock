@@ -427,10 +427,11 @@ packages:
   sentry:
     dependency: "direct main"
     description:
-      name: sentry
-      sha256: "061cf18e0bf127ac8e27d049f34bc87fc430eb35edd4da04f3b4fe0e5b8e9f91"
-      url: "https://pub.dev"
-    source: hosted
+      path: "."
+      ref: bd7a827
+      resolved-ref: bd7a827cd4fa2bc081e2e638cd0eafc983c0f2af
+      url: "https://github.com/CreatorStack/sentry.git"
+    source: git
     version: "6.18.3"
   shelf:
     dependency: transitive
