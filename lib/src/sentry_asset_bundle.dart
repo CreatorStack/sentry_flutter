@@ -86,8 +86,7 @@ class SentryAssetBundle implements AssetBundle {
     return _bundle.loadStructuredData(key, parser);
   }
 
-  Future<T> _loadStructuredDataWithTracing<T>(
-      String key, _Parser<T> parser) async {
+  Future<T> _loadStructuredDataWithTracing<T>(String key, _Parser<T> parser) async {
     final span = _hub.getSpan()?.startChild(
           'file.read',
           description: 'AssetBundle.loadStructuredData<$T>: ${_fileName(key)}',
@@ -258,5 +257,11 @@ class SentryAssetBundle implements AssetBundle {
     }
 
     return data;
+  }
+
+  @override
+  Future<T> loadStructuredBinaryData<T>(String key, FutureOr<T> Function(ByteData data) parser) {
+    // TODO: implement loadStructuredBinaryData
+    throw UnimplementedError();
   }
 }
